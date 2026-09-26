@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Emmanuel Abimbola - Information Technology and Cybersecurity portfolio.">
+  <title>Emmanuel Abimbola | IT Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="#home">EA<span>.</span></a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">INFORMATION TECHNOLOGY • KEAN UNIVERSITY</p>
+        <h1>Hi, I'm <span>Emmanuel Abimbola.</span></h1>
+        <p class="lead">A senior at Kean University pursuing a degree in Information Technology.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">View My Work</a>
+          <a class="button secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="status-dot"></div>
+        <p class="card-label">CURRENT FOCUS</p>
+        <h2>Technology &amp; Cybersecurity</h2>
+        <p>Learning, building, and turning ideas into working web experiences.</p>
+      </div>
+    </section>
+
+    <section id="about" class="section two-col">
+      <div>
+        <p class="eyebrow">ABOUT ME</p>
+        <h2>Technology with a personal touch.</h2>
+      </div>
+      <div class="section-text">
+        <p>I'm Emmanuel Abimbola, an Information Technology student at Kean University. I enjoy learning how technology works and creating projects that combine clean design with useful functionality.</p>
+        <p>This portfolio is a place to showcase my coursework, projects, technical skills, and growth as I prepare for a career in technology.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <p class="eyebrow">SKILLS</p>
+      <h2>What I'm working with</h2>
+      <div class="grid cards">
+        <article class="card"><h3>Web Development</h3><p>HTML, CSS, JavaScript, responsive layouts, and modern UI design.</p></article>
+        <article class="card"><h3>Information Technology</h3><p>Systems, troubleshooting, networking concepts, and practical technology workflows.</p></article>
+        <article class="card"><h3>Cybersecurity</h3><p>Security fundamentals, threat modeling, secure design, and security awareness.</p></article>
+        <article class="card"><h3>Tools &amp; Workflow</h3><p>VS Code, Git, browser developer tools, Figma, and AI-assisted development.</p></article>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <p class="eyebrow">PROJECTS</p>
+      <h2>Selected work</h2>
+      <div class="grid cards">
+        <article class="card project"><span>01</span><h3>Personal Portfolio</h3><p>A responsive portfolio focused on my education, technical skills, and projects.</p></article>
+        <article class="card project"><span>02</span><h3>Threat Modeling</h3><p>A structured analysis of potential security threats for a proposed website.</p></article>
+        <article class="card project"><span>03</span><h3>Mannie AI Assistant</h3><p>A portfolio chatbot with text conversation, speech recognition, and spoken responses.</p></article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <p class="eyebrow">CONTACT</p>
+      <h2>Let's connect.</h2>
+      <p>If you'd like to discuss a project, class assignment, or technology opportunity, send me a message.</p>
+      <a class="button primary" href="mailto:etabim05@gmail.com">Email Emmanuel</a>
+      <p class="small"> <strong>etabim05@gmail.com</strong> with your actual email address.</p>
+    </section>
+  </main>
+
+  <button id="mannie-open" class="mannie-fab" aria-label="Open Mannie AI assistant">💬</button>
+
+  <aside id="mannie-panel" class="chat-panel" aria-hidden="true">
+    <div class="chat-header">
+      <div>
+        <p class="chat-kicker">AI ASSISTANT</p>
+        <h3>Mannie</h3>
+      </div>
+      <button id="mannie-close" class="icon-button" aria-label="Close chat">×</button>
+    </div>
+    <div id="chat-messages" class="chat-messages">
+      <div class="message bot">Hey! I'm Mannie. Ask me about Emmanuel, this portfolio, or the projects here.</div>
+    </div>
+    <div class="voice-status" id="voice-status">Voice ready</div>
+    <div class="chat-controls">
+      <button id="mic-button" class="voice-button" title="Speak to Mannie" aria-label="Speak to Mannie">🎤</button>
+      <input id="chat-input" type="text" placeholder="Ask Mannie something..." autocomplete="off">
+      <button id="send-button" class="send-button">Send</button>
+    </div>
+    <button id="speak-toggle" class="speak-toggle" aria-pressed="true">🔊 Read responses aloud: On</button>
+  </aside>
+
+  <script src="js/app.js"></script>
+  <script src="js/tools/ai-chatbox.js"></script>
+</body>
+</html>
